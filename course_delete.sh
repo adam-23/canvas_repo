@@ -7,7 +7,7 @@ echo -n "Sensitive commands ahead. If ready, type yes > "
 read WHILEGATE
 # Save user input as a variable.
 
-while [ ${WHILEGATE} != "yes" ]
+while [ $WHILEGATE != "yes" ]
 do
 echo "You didn't type yes."
 echo -n "If ready, type yes > "

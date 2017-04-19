@@ -1,10 +1,12 @@
 #!/bin/bash
+
 source api_config.sh
 
 echo -n "Enter course ID > "
 read course_id
 
 touch listed_discussions.txt
+> listed_discussions.txt
 
 curl https://$domain.instructure.com/api/v1/courses/$course_id/discussion_topics \
   -X GET \
